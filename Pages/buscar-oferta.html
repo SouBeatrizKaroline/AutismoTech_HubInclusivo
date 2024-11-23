@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hub Inclusivo</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
@@ -37,33 +37,22 @@
 
 <!-- Conteúdo principal -->
 <main>
-  <section id="content" aria-labelledby="section-title">
+  <section id="content">
     <header>
-      <h1 id="section-title">Fale Conosco</h1>
-      <p>Envie sua mensagem ou dúvida e retornaremos em breve.</p>
+      <h1>Buscar Oferta</h1>
     </header>
-
-    <form action="enviar-contato.php" method="post" aria-labelledby="form-fale-conosco">
+    
+    <form action="resultados.html" method="get" aria-labelledby="form-busca">
       <fieldset>
-        <legend id="form-fale-conosco">Formulário de contato</legend>
-
+        <legend id="form-busca">Formulário de busca de ofertas</legend>
+        
         <div>
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required aria-describedby="nome-ajuda">
+          <label for="busca" id="label-busca">Digite o que deseja encontrar:</label>
+          <input type="text" id="busca" name="busca" placeholder="Ex: Curso de Libras" required aria-describedby="busca-ajuda">
         </div>
 
         <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required aria-describedby="email-ajuda">
-        </div>
-
-        <div>
-          <label for="mensagem">Mensagem:</label>
-          <textarea id="mensagem" name="mensagem" required aria-describedby="mensagem-ajuda"></textarea>
-        </div>
-
-        <div>
-          <button type="submit">Enviar</button>
+          <button type="submit">Buscar</button>
         </div>
       </fieldset>
     </form>
@@ -77,6 +66,6 @@
   </footer>
 
   <!-- Inclusão do JavaScript -->
-  <script src="script.js"></script>
+  <script src="/Js/script.js"></script>
 </body>
 </html>

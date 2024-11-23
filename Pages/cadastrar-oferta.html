@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hub Inclusivo</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
@@ -37,19 +37,45 @@
 
 <!-- Conteúdo principal -->
 <main>
-  <section id="content" aria-labelledby="section-title">
+  <section id="content" aria-labelledby="main-title">
     <header>
-      <h1 id="section-title">Meu Perfil</h1>
+      <h1 id="main-title">Cadastrar Oferta</h1>
     </header>
 
-    <div>
-      <p><strong>Nome:</strong> Usuário Exemplo</p>
-      <p><strong>Email:</strong> exemplo@hubinclusivo.com</p>
-    </div>
+    <form action="processar-oferta.php" method="post" aria-labelledby="form-cadastro-oferta">
+      <fieldset>
+        <legend id="form-cadastro-oferta">Formulário para cadastro de oferta</legend>
 
-    <div>
-      <button type="button" aria-label="Editar seu perfil">Editar Perfil</button>
-    </div>
+        <div>
+          <label for="titulo">Título da Oferta:</label>
+          <input type="text" id="titulo" name="titulo" required aria-describedby="titulo-ajuda">
+        </div>
+
+        <div>
+          <label for="descricao">Descrição:</label>
+          <textarea id="descricao" name="descricao" required aria-describedby="descricao-ajuda"></textarea>
+        </div>
+
+        <div>
+          <label for="categoria">Categoria:</label>
+          <select id="categoria" name="categoria" required aria-describedby="categoria-ajuda">
+            <option value="">Selecione...</option>
+            <option value="educacao">Educação</option>
+            <option value="saude">Saúde</option>
+            <option value="tecnologia">Tecnologia</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="localizacao">Localização:</label>
+          <input type="text" id="localizacao" name="localizacao" required aria-describedby="localizacao-ajuda">
+        </div>
+
+        <div>
+          <button type="submit">Cadastrar Oferta</button>
+        </div>
+      </fieldset>
+    </form>
   </section>
 </main>
 
@@ -60,6 +86,6 @@
   </footer>
 
   <!-- Inclusão do JavaScript -->
-  <script src="script.js"></script>
+  <script src="/Js/script.js"></script>
 </body>
 </html>

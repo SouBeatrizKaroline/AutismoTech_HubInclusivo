@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hub Inclusivo</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
@@ -37,35 +37,29 @@
 
 <!-- Conteúdo principal -->
 <main>
-  <section id="content">
+  <section id="content" aria-labelledby="section-title">
     <header>
-      <h1>Buscar Oferta</h1>
+      <h1 id="section-title">Meu Perfil</h1>
     </header>
-    
-    <form action="resultados.html" method="get" aria-labelledby="form-busca">
-      <fieldset>
-        <legend id="form-busca">Formulário de busca de ofertas</legend>
-        
-        <div>
-          <label for="busca" id="label-busca">Digite o que deseja encontrar:</label>
-          <input type="text" id="busca" name="busca" placeholder="Ex: Curso de Libras" required aria-describedby="busca-ajuda">
-        </div>
 
-        <div>
-          <button type="submit">Buscar</button>
-        </div>
-      </fieldset>
-    </form>
+    <div>
+      <p><strong>Nome:</strong> Usuário Exemplo</p>
+      <p><strong>Email:</strong> exemplo@hubinclusivo.com</p>
+    </div>
+
+    <div>
+      <button type="button" aria-label="Editar seu perfil">Editar Perfil</button>
+    </div>
   </section>
 </main>
 
-  <!-- Rodapé -->
+ <!-- Rodapé -->
   <footer>
     <p>© 2024 - Hub Inclusivo. Todos os direitos reservados.</p>
     <p><a href="politica-privacidade.html" aria-label="Leia nossa política de privacidade">Política de Privacidade</a></p>
   </footer>
 
   <!-- Inclusão do JavaScript -->
-  <script src="script.js"></script>
+  <script src="/Js/script.js"></script>
 </body>
 </html>

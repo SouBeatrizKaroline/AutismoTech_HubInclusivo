@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hub Inclusivo</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
@@ -37,55 +37,27 @@
 
 <!-- Conteúdo principal -->
 <main>
-  <section id="content" aria-labelledby="main-title">
+  <section id="content" aria-labelledby="section-title">
     <header>
-      <h1 id="main-title">Cadastrar Oferta</h1>
+      <h1 id="section-title">Instruções de Uso</h1>
+      <p>Aqui você encontra informações sobre como utilizar o Hub Inclusivo:</p>
     </header>
 
-    <form action="processar-oferta.php" method="post" aria-labelledby="form-cadastro-oferta">
-      <fieldset>
-        <legend id="form-cadastro-oferta">Formulário para cadastro de oferta</legend>
-
-        <div>
-          <label for="titulo">Título da Oferta:</label>
-          <input type="text" id="titulo" name="titulo" required aria-describedby="titulo-ajuda">
-        </div>
-
-        <div>
-          <label for="descricao">Descrição:</label>
-          <textarea id="descricao" name="descricao" required aria-describedby="descricao-ajuda"></textarea>
-        </div>
-
-        <div>
-          <label for="categoria">Categoria:</label>
-          <select id="categoria" name="categoria" required aria-describedby="categoria-ajuda">
-            <option value="">Selecione...</option>
-            <option value="educacao">Educação</option>
-            <option value="saude">Saúde</option>
-            <option value="tecnologia">Tecnologia</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="localizacao">Localização:</label>
-          <input type="text" id="localizacao" name="localizacao" required aria-describedby="localizacao-ajuda">
-        </div>
-
-        <div>
-          <button type="submit">Cadastrar Oferta</button>
-        </div>
-      </fieldset>
-    </form>
+    <ul aria-labelledby="lista-instrucoes">
+      <li>Navegue pelos menus para acessar as principais funcionalidades.</li>
+      <li>Use os botões de acessibilidade no topo para ajustar a experiência.</li>
+      <li>Entre em contato conosco se precisar de suporte adicional.</li>
+    </ul>
   </section>
 </main>
 
- <!-- Rodapé -->
+  <!-- Rodapé -->
   <footer>
     <p>© 2024 - Hub Inclusivo. Todos os direitos reservados.</p>
     <p><a href="politica-privacidade.html" aria-label="Leia nossa política de privacidade">Política de Privacidade</a></p>
   </footer>
 
   <!-- Inclusão do JavaScript -->
-  <script src="script.js"></script>
+  <script src="/Js/script.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hub Inclusivo</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
@@ -39,15 +39,34 @@
 <main>
   <section id="content" aria-labelledby="section-title">
     <header>
-      <h1 id="section-title">Instruções de Uso</h1>
-      <p>Aqui você encontra informações sobre como utilizar o Hub Inclusivo:</p>
+      <h1 id="section-title">Fale Conosco</h1>
+      <p>Envie sua mensagem ou dúvida e retornaremos em breve.</p>
     </header>
 
-    <ul aria-labelledby="lista-instrucoes">
-      <li>Navegue pelos menus para acessar as principais funcionalidades.</li>
-      <li>Use os botões de acessibilidade no topo para ajustar a experiência.</li>
-      <li>Entre em contato conosco se precisar de suporte adicional.</li>
-    </ul>
+    <form action="enviar-contato.php" method="post" aria-labelledby="form-fale-conosco">
+      <fieldset>
+        <legend id="form-fale-conosco">Formulário de contato</legend>
+
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required aria-describedby="nome-ajuda">
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required aria-describedby="email-ajuda">
+        </div>
+
+        <div>
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required aria-describedby="mensagem-ajuda"></textarea>
+        </div>
+
+        <div>
+          <button type="submit">Enviar</button>
+        </div>
+      </fieldset>
+    </form>
   </section>
 </main>
 
@@ -58,6 +77,6 @@
   </footer>
 
   <!-- Inclusão do JavaScript -->
-  <script src="script.js"></script>
+  <script src="/Js/script.js"></script>
 </body>
 </html>
