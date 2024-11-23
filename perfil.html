@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <!-- Cabeçalho com logotipo e menu -->
   <header>
     <div class="logo" role="banner">
@@ -34,16 +35,23 @@
     </div>
   </header>
 
-  <!-- Conteúdo principal -->
+<!-- Conteúdo principal -->
+<main>
+  <section id="content" aria-labelledby="section-title">
+    <header>
+      <h1 id="section-title">Meu Perfil</h1>
+    </header>
 
-  <main>
-    <section id="content">
-      <h1>Meu Perfil</h1>
-      <p>Nome: Usuário Exemplo</p>
-      <p>Email: exemplo@hubinclusivo.com</p>
-      <button>Editar Perfil</button>
-    </section>
-  </main>
+    <div>
+      <p><strong>Nome:</strong> Usuário Exemplo</p>
+      <p><strong>Email:</strong> exemplo@hubinclusivo.com</p>
+    </div>
+
+    <div>
+      <button type="button" aria-label="Editar seu perfil">Editar Perfil</button>
+    </div>
+  </section>
+</main>
 
  <!-- Rodapé -->
   <footer>
