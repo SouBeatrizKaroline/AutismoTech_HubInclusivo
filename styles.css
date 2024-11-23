@@ -1,7 +1,12 @@
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
 }
 
 body {
@@ -15,47 +20,122 @@ body {
   transition: all 0.3s ease;
 }
 
+/* Cabeçalho */
 header {
   background-color: #333;
   color: white;
-  padding: 15px 10px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 1.5em;
+header .logo {
+  display: flex;
+  align-items: center;
 }
 
-nav {
+header .logo img {
+  max-height: 50px;
+}
+
+header nav {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  align-items: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
 }
 
-nav a {
+header nav .menu {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  padding: 0;
+}
+
+header nav .menu li {
+  display: inline-block;
+}
+
+header nav .menu a {
   color: white;
   text-decoration: none;
-  padding: 10px 15px;
-  margin: 0 5px;
+  padding: 8px 15px;
   border-radius: 5px;
   background-color: #555;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-nav a:hover {
+header nav .menu a:hover {
   background-color: #777;
+  transform: scale(1.05);
 }
 
-.accessibility-controls {
-  text-align: center;
+header .accessibility-controls {
+  display: flex;
+  gap: 10px;
   margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-button {
-  margin: 5px;
+header .accessibility-controls button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header .accessibility-controls button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  header nav {
+    flex-grow: 0;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  header nav .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header nav .menu li {
+    text-align: left;
+  }
+
+  header .accessibility-controls {
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+
+/* Controles de Acessibilidade */
+.accessibility-controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.accessibility-controls button {
   padding: 10px 15px;
   font-size: 16px;
   border: none;
@@ -63,13 +143,15 @@ button {
   cursor: pointer;
   background-color: #007bff;
   color: white;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
+.accessibility-controls button:hover {
   background-color: #0056b3;
+  transform: scale(1.05);
 }
 
+/* Conteúdo Principal */
 main {
   flex: 1;
   padding: 20px;
@@ -81,26 +163,40 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 20px;
 }
 
+main section h2 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+/* Rodapé */
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   background-color: #333;
   color: white;
 }
 
+/* Links com Destaque */
 .highlight-link {
   font-weight: bold;
   color: #007bff;
+  text-decoration: none;
 }
 
+.highlight-link:hover {
+  text-decoration: underline;
+}
+
+/* Imagens Responsivas */
 img {
   max-width: 100%;
   height: auto;
 }
 
+/* Contraste Alto */
 body.high-contrast {
   background-color: #000;
   color: #fff;
@@ -132,11 +228,11 @@ body.high-contrast .highlight-link {
   color: #FFD700;
 }
 
+/* Botão VLibras */
 #libras-sign {
-  display: none;
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
   width: 60px;
   height: 60px;
   background-color: #007bff;
@@ -147,8 +243,50 @@ body.high-contrast .highlight-link {
   justify-content: center;
   font-size: 1.2em;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  transition: transform 0.3s ease;
 }
 
-#libras-sign.active {
-  display: flex;
+#libras-sign:hover {
+  transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  header nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .accessibility-controls {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+
+  .accessibility-controls button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 }
