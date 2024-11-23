@@ -13,7 +13,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: transparent;
-  color: #333;
+  color: #333; /* Cor preta por padrão */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -129,7 +129,7 @@ main {
   max-width: 1000px;
   margin: 20px auto;
   background-color: transparent;
-  color: #333;
+  color: #333; /* Cor preta por padrão */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -170,7 +170,7 @@ img {
 /* Contraste Alto */
 body.high-contrast {
   background-color: #000;
-  color: #fff;
+  color: #fff; /* Texto branco no modo de alto contraste */
 }
 
 body.high-contrast header,
@@ -180,7 +180,7 @@ body.high-contrast footer {
 }
 
 body.high-contrast nav a {
-  color: #FFD700;
+  color: #FFD700; /* Títulos e links em dourado no alto contraste */
   background-color: #333;
 }
 
@@ -206,7 +206,7 @@ body.high-contrast h3,
 body.high-contrast h4,
 body.high-contrast h5,
 body.high-contrast h6 {
-  color: #fff; /* Garantir que todos os cabeçalhos sejam brancos no alto contraste */
+  color: #fff; /* Todos os cabeçalhos ficam brancos no alto contraste */
 }
 
 /* Botão VLibras */
