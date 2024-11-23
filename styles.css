@@ -8,11 +8,11 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
-  color: #333; /* Cor do texto padrão */
+  color: #333;
   display: flex;
-  flex-direction: column; /* Alinhamento vertical */
+  flex-direction: column;
   min-height: 100vh;
-  transition: all 0.3s ease; /* Transições suaves */
+  transition: all 0.3s ease;
 }
 
 header {
@@ -71,7 +71,7 @@ button:hover {
 }
 
 main {
-  flex: 1; /* Faz o main crescer para preencher o espaço disponível */
+  flex: 1;
   padding: 20px;
   max-width: 1000px;
   margin: 20px auto;
@@ -80,8 +80,8 @@ main {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column; /* Alinha o conteúdo interno verticalmente */
-  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  flex-direction: column;
+  justify-content: center;
 }
 
 footer {
@@ -101,7 +101,6 @@ img {
   height: auto;
 }
 
-/* Modo de alto contraste */
 body.high-contrast {
   background-color: #000;
   color: #fff;
@@ -133,9 +132,8 @@ body.high-contrast .highlight-link {
   color: #FFD700;
 }
 
-/* Estilização do componente Libras */
 #libras-sign {
-  display: none; /* O botão ativa/desativa */
+  display: none;
   position: fixed;
   bottom: 10px;
   right: 10px;
