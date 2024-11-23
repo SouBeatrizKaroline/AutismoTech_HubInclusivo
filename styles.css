@@ -12,7 +12,7 @@ html {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: transparent;
   color: #333;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@ body {
 
 /* Cabeçalho */
 header {
-  background-color: #333;
+  background-color: transparent;
   color: white;
   padding: 10px 20px;
   display: flex;
@@ -156,7 +156,7 @@ main {
   padding: 20px;
   max-width: 1000px;
   margin: 20px auto;
-  background-color: white;
+  background-color: transparent;
   color: #333;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -174,7 +174,7 @@ main section h2 {
 footer {
   text-align: center;
   padding: 15px;
-  background-color: #333;
+  background-color: transparent;
   color: white;
 }
 
@@ -391,23 +391,18 @@ form textarea:focus {
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/* Botões de envio */
+/* Botões de ação no formulário */
 form button {
   padding: 12px 20px;
-  font-size: 1.1em;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
+  font-size: 1.1em;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 form button:hover {
   background-color: #0056b3;
-}
-
-form button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
 }
