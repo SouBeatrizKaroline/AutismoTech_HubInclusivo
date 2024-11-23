@@ -46,6 +46,16 @@ header .logo img {
   max-height: 50px;
 }
 
+/* Parágrafos no modo padrão */
+p {
+  color: #333; /* Cor do texto no modo normal */
+}
+
+/* No modo de alto contraste */
+body.high-contrast p {
+  color: #fff; /* Texto branco no alto contraste */
+}
+
 header nav {
   display: flex;
   justify-content: center;
