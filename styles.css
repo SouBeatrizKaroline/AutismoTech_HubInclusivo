@@ -97,34 +97,6 @@ header .accessibility-controls button:hover {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-  }
-
-  header nav {
-    flex-grow: 0;
-    width: 100%;
-    justify-content: flex-start;
-  }
-
-  header nav .menu {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  header nav .menu li {
-    text-align: left;
-  }
-
-  header .accessibility-controls {
-    justify-content: flex-start;
-    width: 100%;
-  }
-}
-
 /* Controles de Acessibilidade */
 .accessibility-controls {
   display: flex;
@@ -290,9 +262,7 @@ body.high-contrast .highlight-link {
   }
 }
 
-/* Estilo (CSS) para melhorar a aparência */
-
-/* Container principal */
+/* Estilo para o perfil de usuário */
 .profile-container {
   display: flex;
   align-items: center;
@@ -304,7 +274,6 @@ body.high-contrast .highlight-link {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Imagem de perfil */
 .profile-image {
   width: 150px;
   height: 150px;
@@ -319,7 +288,6 @@ body.high-contrast .highlight-link {
   object-fit: cover;
 }
 
-/* Estilo padrão */
 .profile-info strong {
   color: #333; /* Cor padrão */
 }
@@ -327,11 +295,6 @@ body.high-contrast .highlight-link {
 /* Ajuste para o modo de alto contraste */
 body.high-contrast .profile-info strong {
   color: #FFD700; /* Cor mais visível no alto contraste */
-}
-
-/* Ajuste para o modo de alto contraste */
-body.high-contrast .profile-info strong {
-  color: #FFF; 
 }
 
 /* Estilo do botão de editar */
