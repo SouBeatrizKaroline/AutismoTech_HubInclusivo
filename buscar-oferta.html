@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <!-- Cabeçalho com logotipo e menu -->
   <header>
     <div class="logo" role="banner">
@@ -34,19 +35,29 @@
     </div>
   </header>
 
-  <!-- Conteúdo principal -->
-
-  <main>
-    <section id="content">
+<!-- Conteúdo principal -->
+<main>
+  <section id="content">
+    <header>
       <h1>Buscar Oferta</h1>
-      <form action="resultados.html" method="get" aria-label="Formulário de busca de ofertas">
-        <label for="busca">Digite o que deseja encontrar:</label>
-        <input type="text" id="busca" name="busca" placeholder="Ex: Curso de Libras" required>
+    </header>
+    
+    <form action="resultados.html" method="get" aria-labelledby="form-busca">
+      <fieldset>
+        <legend id="form-busca">Formulário de busca de ofertas</legend>
+        
+        <div>
+          <label for="busca" id="label-busca">Digite o que deseja encontrar:</label>
+          <input type="text" id="busca" name="busca" placeholder="Ex: Curso de Libras" required aria-describedby="busca-ajuda">
+        </div>
 
-        <button type="submit">Buscar</button>
-      </form>
-    </section>
-  </main>
+        <div>
+          <button type="submit">Buscar</button>
+        </div>
+      </fieldset>
+    </form>
+  </section>
+</main>
 
   <!-- Rodapé -->
   <footer>
