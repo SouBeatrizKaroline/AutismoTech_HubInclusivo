@@ -40,25 +40,34 @@
   <section id="content">
     <header>
       <h1>Buscar Oferta</h1>
+      <p>Encontre serviços e oportunidades que atendam às suas necessidades</p>
     </header>
     
     <form action="resultados.html" method="get" aria-labelledby="form-busca">
       <fieldset>
         <legend id="form-busca">Formulário de busca de ofertas</legend>
         
-        <div>
-          <label for="busca" id="label-busca">Digite o que deseja encontrar:</label>
-          <input type="text" id="busca" name="busca" placeholder="Ex: Curso de Libras" required aria-describedby="busca-ajuda">
+        <div class="form-group">
+          <label for="busca" id="label-busca">O que você deseja encontrar</label>
+          <input 
+            type="text" 
+            id="busca" 
+            name="busca" 
+            placeholder="Exemplo: Curso de Libras" 
+            required 
+            aria-describedby="busca-ajuda"
+          >
+          <small id="busca-ajuda">Digite palavras-chave para encontrar a oferta desejada</small>
         </div>
 
-        <div>
+        <div class="form-group">
           <button type="submit">Buscar</button>
         </div>
       </fieldset>
     </form>
   </section>
 </main>
-  
+
   <!-- Rodapé -->
   <footer>
     <p>© 2024 - Hub Inclusivo. Todos os direitos reservados.</p>
