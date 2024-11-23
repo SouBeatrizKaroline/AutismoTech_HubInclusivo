@@ -199,6 +199,16 @@ body.high-contrast .highlight-link {
   color: #FFD700;
 }
 
+/* Alterações para Cabeçalhos no Modo de Alto Contraste */
+body.high-contrast h1,
+body.high-contrast h2,
+body.high-contrast h3,
+body.high-contrast h4,
+body.high-contrast h5,
+body.high-contrast h6 {
+  color: #fff; /* Garantir que todos os cabeçalhos sejam brancos no alto contraste */
+}
+
 /* Botão VLibras */
 #libras-sign {
   position: fixed;
