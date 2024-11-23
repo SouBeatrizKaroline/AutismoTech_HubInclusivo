@@ -329,6 +329,10 @@ body.high-contrast .highlight-link {
   color: #333;
 }
 
+body.high-contrast .profile-info strong {
+  color: #FFD700; /* Um tom de amarelo mais visível */
+}
+
 /* Estilo do botão de editar */
 .profile-actions {
   margin-top: 20px;
