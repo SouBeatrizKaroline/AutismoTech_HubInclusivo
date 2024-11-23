@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333; /* Cor do texto padrão */
+  display: flex;
+  flex-direction: column; /* Alinhamento vertical */
+  min-height: 100vh;
+  transition: all 0.3s ease; /* Transições suaves */
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  background-color: #555;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #777;
+}
+
+.accessibility-controls {
+  text-align: center;
+  margin-top: 10px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+main {
+  flex: 1; /* Faz o main crescer para preencher o espaço disponível */
+  padding: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: white;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Alinha o conteúdo interno verticalmente */
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.highlight-link {
+  font-weight: bold;
+  color: #007bff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Modo de alto contraste */
+body.high-contrast {
+  background-color: #000;
+  color: #fff;
+}
+
+body.high-contrast header,
+body.high-contrast footer {
+  background-color: #000;
+  color: #fff;
+}
+
+body.high-contrast nav a {
+  color: #FFD700;
+  background-color: #333;
+}
+
+body.high-contrast button {
+  background-color: #FFD700;
+  color: #000;
+  border: 2px solid #FFF;
+}
+
+body.high-contrast main {
+  background-color: #000;
+  color: #fff;
+}
+
+body.high-contrast .highlight-link {
+  color: #FFD700;
+}
+
+/* Estilização do componente Libras */
+#libras-sign {
+  display: none; /* O botão ativa/desativa */
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#libras-sign.active {
+  display: flex;
+}
