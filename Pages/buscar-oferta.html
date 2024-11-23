@@ -35,37 +35,67 @@
     </div>
   </header>
 
-<!-- Conteúdo Principal -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hub Inclusivo</title>
+    <link rel="stylesheet" href="./../styles.css">
+</head>
+<body>
+
+  <!-- Cabeçalho com logotipo e menu -->
+  <header>
+    <div class="logo" role="banner">
+      <img src="logo.png" alt="Logotipo do Hub Inclusivo, promovendo acessibilidade para todos">
+    </div>
+
+    <nav aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="./../index.html" aria-label="Ir para a página inicial">Início</a></li>
+        <li><a href="cadastrar-oferta.html" aria-label="Cadastrar uma oferta de serviço">Cadastrar Oferta</a></li>
+        <li><a href="buscar-oferta.html" aria-label="Buscar ofertas disponíveis">Busca Geral</a></li>
+        <li><a href="instrucoes-uso.html" aria-label="Acessar as instruções de uso">Ajuda</a></li>
+        <li><a href="perfil.html" aria-label="Acessar o perfil do usuário">Perfil</a></li>
+        <li><a href="fale-conosco.html" aria-label="Entre em contato conosco">Fale Conosco</a></li>
+      </ul>
+    </nav>
+
+    <!-- Controles de acessibilidade -->
+    <div class="accessibility-controls" role="toolbar" aria-label="Controles de acessibilidade">
+      <button id="toggle-contrast" aria-label="Ativar ou desativar o modo de alto contraste">🌗 Contraste</button>
+      <button id="increase-text" aria-label="Aumentar o tamanho do texto">A+</button>
+      <button id="decrease-text" aria-label="Diminuir o tamanho do texto">A-</button>
+      <button id="reset-zoom" aria-label="Resetar o zoom da página">🔄 Resetar</button>
+      <button id="toggle-libras" aria-label="Ativar ou desativar o suporte em Libras">🤟 Libras</button>
+    </div>
+  </header>
+
+<!-- Conteúdo principal -->
 <main>
-  <section id="content" aria-labelledby="main-title">
+  <section id="content">
     <header>
-      <h1 id="main-title">Bem-vindo ao Hub Inclusivo</h1>
-      <p>Conectamos pessoas e comunidades a soluções acessíveis. Explore nosso universo de possibilidades para transformar vidas!</p>
+      <h1>Buscar Oferta</h1>
     </header>
+    
+    <form action="resultados.html" method="get" aria-labelledby="form-busca">
+      <fieldset>
+        <legend id="form-busca">Formulário de busca de ofertas</legend>
+        
+        <div>
+          <label for="busca" id="label-busca">Digite o que deseja encontrar:</label>
+          <input type="text" id="busca" name="busca" placeholder="Ex: Curso de Libras" required aria-describedby="busca-ajuda">
+        </div>
 
-    <article>
-      <section>
-        <h2>Por que escolher o Hub Inclusivo?</h2>
-        <p>Oferecemos ferramentas inovadoras e recursos personalizados para atender às diversas necessidades de acessibilidade, promovendo inclusão social e autonomia.</p>
-      </section>
-
-      <section>
-        <h2>O que você encontra aqui</h2>
-        <ul>
-          <li><strong>Serviços próximos a você:</strong> Localize empresas e organizações acessíveis na sua região.</li>
-          <li><strong>Recursos adaptados:</strong> Conteúdos e funcionalidades projetados para todas as necessidades.</li>
-          <li><strong>Comunidade ativa:</strong> Conecte-se a iniciativas e colabore para construir um mundo mais inclusivo.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Nosso compromisso com a inclusão</h2>
-        <p>Estamos dedicados a criar uma plataforma digital que acolha a diversidade, respeite cada indivíduo e contribua para a igualdade de oportunidades.</p>
-      </section>
-    </article>
+        <div>
+          <button type="submit">Buscar</button>
+        </div>
+      </fieldset>
+    </form>
   </section>
 </main>
-
+  
   <!-- Rodapé -->
   <footer>
     <p>© 2024 - Hub Inclusivo. Todos os direitos reservados.</p>
