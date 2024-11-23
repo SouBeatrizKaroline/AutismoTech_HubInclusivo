@@ -319,15 +319,14 @@ body.high-contrast .highlight-link {
   object-fit: cover;
 }
 
-/* Informações do usuário */
-.profile-info p {
-  font-size: 1.1em;
-  margin: 5px 0;
-}
-
 /* Estilo padrão */
 .profile-info strong {
   color: #333; /* Cor padrão */
+}
+
+/* Ajuste para o modo de alto contraste */
+body.high-contrast .profile-info strong {
+  color: #FFD700; /* Cor mais visível no alto contraste */
 }
 
 /* Ajuste para o modo de alto contraste */
