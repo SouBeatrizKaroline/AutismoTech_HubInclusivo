@@ -325,12 +325,14 @@ body.high-contrast .highlight-link {
   margin: 5px 0;
 }
 
+/* Estilo padrão */
 .profile-info strong {
-  color: #333;
+  color: #333; /* Cor padrão */
 }
 
+/* Ajuste para o modo de alto contraste */
 body.high-contrast .profile-info strong {
-  color: #FFD700; /* Um tom de amarelo mais visível */
+  color: #FFF; 
 }
 
 /* Estilo do botão de editar */
