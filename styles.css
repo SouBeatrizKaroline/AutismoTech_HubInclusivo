@@ -290,3 +290,61 @@ body.high-contrast .highlight-link {
     padding: 8px 12px;
   }
 }
+
+<!-- Estilo (CSS) para melhorar a aparência -->
+  /* Container principal */
+  .profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Imagem de perfil */
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ddd;
+  }
+
+  .profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Informações do usuário */
+  .profile-info p {
+    font-size: 1.1em;
+    margin: 5px 0;
+  }
+
+  .profile-info strong {
+    color: #333;
+  }
+
+  /* Estilo do botão de editar */
+  .profile-actions {
+    margin-top: 20px;
+  }
+
+  .edit-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .edit-btn:hover {
+    background-color: #0056b3;
+  }
